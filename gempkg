@@ -195,13 +195,13 @@ if not path or path == '/':
     homepage()
     exit(0)
 
-try:
-    if not path.endswith("/"):
-        reply(31, f"{script_path}{path}/")
-        exit(0)
-    # drop the leading and trailing /
-    path = path.strip("/")
+if not path.endswith("/"):
+    reply(31, f"{script_path}{path}/")
+    exit(0)
+# drop the leading and trailing /
+path = path.strip("/")
 
+try:
     conn = sqlite3.connect(sqlports)
 
     if path == 'search':
