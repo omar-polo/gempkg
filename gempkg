@@ -79,7 +79,7 @@ def homepage():
     reply(20, "text/gemini;lang=en")
     print("# GemPKG")
     print("")
-    print("Welcome to GemPKG, ",
+    print("Welcome to GemPKG,",
           "the gemini interface for the OpenBSD ports collection.")
     print("")
     print(f"=> {script_path}/search Search for a package")
