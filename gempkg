@@ -185,7 +185,7 @@ def portpage(row):
     print("Maintainer:", maintainer)
     print("")
     print("## Description")
-    printraw(re.sub(r"\n", " ", descr))
+    verbatim(f"{stem} description", descr)
     print("")
     if readme:
         print("## Readme")
