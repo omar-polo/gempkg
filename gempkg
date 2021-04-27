@@ -136,10 +136,7 @@ def searchpage():
     nav()
     for row in cursor:
         stem, comment, fullpkgpath = row
-        print(f"=> {script_path}/{fullpkgpath}/ {stem}")
-        print(f"> {comment}")
-        print("")
-        print("")
+        print(f"=> {script_path}/{fullpkgpath}/ {stem}: {comment}")
     foot()
 
 
