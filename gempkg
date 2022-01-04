@@ -134,6 +134,7 @@ def searchpage():
 
     reply(20, "text/gemini;lang=en")
     nav()
+    print(f"# packages matching {query}\n")
     for row in cursor:
         stem, comment, fullpkgpath = row
         print(f"=> {script_path}/{fullpkgpath}/ {stem}: {comment}")
